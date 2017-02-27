@@ -29,6 +29,7 @@ public class FibonacciTest {
     @Test
     public void shouldReturnOneForTwo() {
         int result = fibonacci.fibonacci(2);
+        System.out.println(result);
         assertEquals(1, result);
     }
 

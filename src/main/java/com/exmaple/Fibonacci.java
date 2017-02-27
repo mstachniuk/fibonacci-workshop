@@ -2,17 +2,13 @@ package com.exmaple;
 
 public class Fibonacci {
     public int fibonacci(int n) {
-        if(n < 2) {
-            return n;
-        }
-        int before1 = 1;
-        int before2 = 0;
-        int sum = 0;
-        for (int i = 2; i <= n; i++) {
-            sum = before1 + before2;
-            before2 = before1;
-            before1 = sum;
-        }
-        return sum;
+        double sqrt5 = Math.sqrt(5);
+        double oneDivSqrt5 = 1 / sqrt5;
+        double x1 = (1 + sqrt5) /2;
+        double x2 = (1 - sqrt5) / 2;
+
+        double fib = oneDivSqrt5 * Math.pow(x1, n) - oneDivSqrt5 * Math.pow(x2, n);
+
+        return (int) Math.round(fib);
     }
 }
