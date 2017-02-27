@@ -37,4 +37,10 @@ public class FibonacciTest {
         int result = fibonacci.fibonacci(3);
         assertEquals(2, result);
     }
+
+    @Test
+    public void shouldReturn55For10() {
+        int result = fibonacci.fibonacci(10);
+        assertEquals(55, result);
+    }
 }
