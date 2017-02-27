@@ -17,4 +17,16 @@ public class FibonacciTest {
         // then
         assertEquals(0, result);
     }
+
+    @Test
+    public void shouldReturnOneForOne() {
+        // given
+        Fibonacci fibonacci = new Fibonacci();
+
+        // when
+        int result = fibonacci.fibonacci(1);
+
+        // then
+        assertEquals(1, result);
+    }
 }
