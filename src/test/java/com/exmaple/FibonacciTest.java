@@ -31,4 +31,10 @@ public class FibonacciTest {
         int result = fibonacci.fibonacci(2);
         assertEquals(1, result);
     }
+
+    @Test
+    public void shouldReturnTwoForThree() {
+        int result = fibonacci.fibonacci(3);
+        assertEquals(2, result);
+    }
 }
