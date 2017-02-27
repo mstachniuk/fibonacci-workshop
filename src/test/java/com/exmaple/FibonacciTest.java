@@ -17,21 +17,18 @@ public class FibonacciTest {
     @Test
     public void shouldReturnZeroForZero() {
         int result = fibonacci.fibonacci(0);
-
         assertEquals(0, result);
     }
 
     @Test
     public void shouldReturnOneForOne() {
         int result = fibonacci.fibonacci(1);
-
         assertEquals(1, result);
     }
 
     @Test
     public void shouldReturnOneForTwo() {
         int result = fibonacci.fibonacci(2);
-
         assertEquals(1, result);
     }
 }
